@@ -1,0 +1,219 @@
+@media screen and (min-width: 1440px) {
+    /* Mi pantalla tiene 1920 de ancho */
+
+    /* Header */
+    .nav_mobile {
+        display: none;
+    }
+    .nav_desktop {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav_desktop ul {
+        display: flex;
+        gap: 3vw;
+        list-style-type: none;
+    }
+    .nav_desktop a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .get_started {
+        height: 6vh;
+        width: 10vw;
+    }
+    .img_ilustrativa_mobile {
+        display: none;
+    }
+    .img_ilustrativa_desktop {
+        display: block;
+        width: 30vw;
+    }
+    .introduction {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 5vw;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    .introduction article {
+        align-items: flex-start;
+        width: 36vw;
+    }
+    .introduction article button {
+        margin-top: -4vh;
+    }
+    .introduction article h1 {
+        text-align: start;
+        width: 25vw;
+    }
+    .introduction article p {
+        color: inherit;
+        font-size: 0.7rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        padding: 0;
+        text-align: start;
+        width: 18vw;
+    }
+    /* Main */
+    .background-desktop {
+        background-image: url(../img/bg-tablet-pattern.svg);
+        background-position: -40%;
+        background-repeat: no-repeat;
+        background-size: 40vw;
+        width: 100%;
+    }
+    .differences {
+        display: flex;
+        flex-direction: row;
+        gap: 14.5vw;
+        justify-content: center;
+        margin-bottom: 10vh;
+    }
+    .differences article {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+    .differences article h1 {
+        text-align: left;
+    }
+    .differences article p {
+        color: black;
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 0;
+        text-align: left;
+        width: 20vw;
+    }
+
+    .differences ul {
+        width: 30vw;
+    }
+    .differences li h3 {
+        background-color: inherit;
+    }
+    .differences li h3 span {
+        border-radius: 30px;
+        margin-right: 1vw;
+        padding: 1vw 2vw;
+    }
+    .differences li p {
+        margin-left: 1.2vw;
+        text-align: left;
+        width: 85%;
+    }
+
+    .opinions h1 {
+        font-size: 3rem;
+    }
+    .opinions section {
+        display: flex;
+        gap: 6vw;
+        margin-bottom: 10vh;
+    }
+    .opinions article {
+        width: 25vw;
+    }
+    .opinions article img {
+        width: 5vw;
+    }
+    .opinions article p {
+        margin: 0
+    }
+    .desk_only {
+        display: flex !important;
+    }
+    .opinions div {
+        display: none;
+    }
+
+    .simplify {
+        background-image: url(../img/bg-simplify-section-desktop.svg);
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5vh 0;
+    }
+    .simplify h1 {
+        text-align: start;
+        width: 30vw;
+    }
+    /* Footer */
+    footer {
+        flex-direction: row-reverse;
+        gap: 8vw;
+        padding: 3vh 0;
+        position: relative;
+    }
+    .footer_final {
+        flex-direction: column-reverse;
+        gap: 10vh;
+    }
+    .social_media {
+        gap: 1vw;
+    }
+    .social_media i {
+        width: 2vw;
+    }
+    .fa-youtube {
+        padding: 1vh 0.1vh;
+    }
+    .logo_footer {
+        margin: 0;
+        width: 15vw;
+    }
+    .links {
+        gap: 8vw;
+    }
+    .links div {
+        width: 7.5vw;
+    }
+    footer form input {
+        margin-bottom: 14vh;
+        padding: 2vh 3vw;
+    }
+    input:invalid {
+        border: 1px solid red;
+        color: red;
+    }
+    input:invalid::after {
+        color: red;
+        content: "Please insert a valid email";
+    }
+    footer form input[type="submit"] {
+        padding: 2vh 2vw;
+    }
+    footer p {
+        bottom: 7vh;
+        position: absolute;
+        right: 15vw;
+    }
+    /* Active states */
+    .nav_desktop a:hover {
+        opacity: 50%;
+    }
+    .get_started:hover {
+        cursor: pointer;
+        opacity: 50%;
+    }
+    .simplify button:hover {
+        color: rgba(242, 95, 58, 0.3);
+        opacity: 1
+    }
+    .links a:hover {
+        color: #F3603B;
+    }
+    .social_media i:hover {
+        color: #F3603B;
+    }
+    .fa-youtube:hover {
+        background-color: #F3603B;
+    }
+    footer form input[type="submit"]:hover {
+        background-color: #eb9681;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,279 @@
+/* 
+    Vic, si estás leyendo esto, te recomiendo la extensión "PostCSS Sorting".
+    La usé para ordenar las propiedades alfabeticamente 👍.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+body {
+    box-sizing: border-box;
+    color: rgb(35, 44, 81);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9vh;
+}
+.top_header {
+    display: flex;
+    flex-direction: column;
+    padding: 6vh 6vw 0;
+}
+/* Tuve que hacer un container con el background
+porque el padding cortaba el background como si fuese 
+un margin y no sé por qué 😔. */
+.background-header {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-position: left bottom 93px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav_mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+.nav_desktop {
+    display: none;
+}
+.img_ilustrativa_mobile {
+    width: 90vw;
+}
+.img_ilustrativa_desktop {
+    display: none;
+}
+
+.introduction {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introduction h1 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+.introduction p {
+    bottom: 5vh;
+    color: #B3B2B7;
+    line-height: 1.7rem;
+    padding: 0 5vw;
+    position: relative;
+    text-align: center;
+}
+.get_started {
+    background-color: #F3603B;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px 0px rgba(243, 96, 59, 0.5);
+    color: white;
+    font-weight: bold;
+    height: 7.5vh;
+    text-decoration: none;
+    width: 37vw;
+}
+.introduction article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+article.get_started {
+    bottom: 3vh;
+    position: relative;
+}
+.background_introduction {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-position: top right -113px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Main */
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.differences h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+.differences p {
+    color: #B3B2B7;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding: 0 5vw;
+    text-align: center;
+}
+
+.differences ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-left: -5vw;
+}
+.differences li h3 {
+    background-color: rgb(255, 239, 234);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 1rem;
+    padding: 1.2vh 1.2vh 1.2vh 0;
+}
+.differences li h3 span {
+    background-color: #F3603B;
+    border-radius: 20px;
+    color: white;
+    margin-right: 4vw;
+    padding: 2vw 5vw;
+}
+.differences li p {
+    color: #B3B2B7;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.opinions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+.opinions h1 {
+    font-size: 1.9rem;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+.desk_only {
+    display: none !important;
+}
+.opinions article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.opinions article img {
+    width: 25vw;
+}
+.opinions article p {
+    color: #B3B2B7;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5vh 10vw;
+    text-align: center;
+}
+.opinions div {
+    color: #F3603B;
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 5vh;
+}
+
+.simplify {
+    align-items: center;
+    background-color: #F3603B;
+    background-image: url(../img/bg-simplify-section-mobile.svg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 11.5vh 0;
+    width: 100%;
+}
+.simplify h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    width: 85vw;
+}
+.simplify button.get_started {
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    color: #F3603B;
+}
+/* Footer */
+footer {
+    align-items: center;
+    background-color: #1E1E26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6vh 6vw 2vh;
+}
+
+footer form {
+    display: flex;
+    gap: 2vw;
+}
+footer form input {
+    border: none;
+    border-radius: 30px;
+    padding: 3.5vw 9vw;
+}
+footer form input[type="submit"] {
+    background-color: #F3603B;
+    color: white;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 25vw;
+    margin: 8vh 0;
+}
+.links div {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    justify-content: flex-start;
+}
+.links a {
+    color: #B3B2B7;
+    text-decoration: none;
+}
+
+.footer_final {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.social_media {
+    display: flex;
+    gap: 8.5vw;
+}
+.social_media i {
+    color: white;
+    font-size: 2rem;
+}
+/*
+Acá tuve que hacer un poco de malabares para
+hacer el ícono de youtube porque ese específico
+no estaba en FontAwesome
+*/
+.fa-youtube {
+    background-color: white;
+    border-radius: 20vw;
+    color: #1E1E26 !important;
+    font-size: 1rem !important;
+    padding: 1.2vh;
+    text-align: center;
+}
+
+.logo_footer {
+    margin: 9vh 0 5vh;
+    width: 45vw;
+}
+
+footer p {
+    color: #B3B2B7;
+    font-size: 0.75rem;
+}
